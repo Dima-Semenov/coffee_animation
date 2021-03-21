@@ -2,6 +2,35 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.coffee {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #000d27;
+  height: 2000px;
+
+  &__back {
+    background-image: url("../images/Фон.png");
+    background-size: cover;
+    height: 805px;
+  }
+
+  &__photo {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 50px;
+    z-index: 100;
+  }
+
+  &__fon {
+    margin-top: 50px;
+    height: 800px;
+    text-align: center;
+  }
 }
